@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../assets/css/app.css">
+    <link rel="stylesheet" href="./../assets/css/vaga.css">
+    <link rel="SHORTCUT ICON" href="https://www.spaceneedle.com.br/favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Quero Ser Space</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="logo" src="../assets/images/Space_Horizontal.png" >
+    </header>
+
+    <div id="load" class="loader">
+    </div>
+
+    <section id="main" class="card-vaga centro card-centro none">
+        <div class="title">
+            <img src="./../assets/images/idea_shadow_dark.png">
+            <h1 id="vaga"></h1>
+        </div>
+        <div id="properties">
+        </div>
+    </section>
+    <div class="fundo"></div>
+</body>
+
+<script>
+
+    let id = window.location.search.substring(1);
+
+    if (window.location.host != "" && window.location.host != "localhost" && location.protocol != 'https:')
+    {
+        location.href = location.href.replace("http:", "https:")
+    }
+
+    if(id){
+        let endpoint = `https://i-wanna-be-space-storage.azurewebsites.net/download/$web/i-wanna-be-space/vagas/dados/${id}`;
+ 
+        fetch(endpoint,{
+            method:'GET'
+        })
+        .then(function (response) {
+            if(response.status == 404){
+                const url = window.location.href.split("/")[0];
+                window.location.href = url +'/notFound.html';
+            }
+            return response.text();
+        })
+        .then(response => {
+
+            vaga = JSON.parse(response)
+
+            if(vaga.length === 0){
+                const url = window.location.href.split("/")[0];
+                return window.location.href = url +'/notFound.html';
+            }
+            // iterando as propriedades
+            vaga.data.forEach(content => {
+                let properties = document.getElementById("properties");
+                if(content['type'] == "string" || content['type'] == "text"){
+                    if(content['key'] === 'titulo'){
+                        return document.getElementById('vaga').innerText = content['value'];
+
+                    }else{
+                        let propertyDiv = document.createElement('div');
+                        propertyDiv.classList.add('property');
+
+                        let property = document.createElement('h3'); 
+                        property.innerText = content['key'];
+
+                        let propertyValue = document.createElement('p'); 
+                        propertyValue.innerText = content['value'];
+
+                        propertyDiv.appendChild(property);
+                        propertyDiv.appendChild(propertyValue);
+                        properties.appendChild(propertyDiv);
+                    }
+                }
+            }); 
+            
+            loaded();
+        })
+    }else{
+        const url = window.location.href.split("/")[0];
+        window.location.href = url +'/notFound.html';
+    }
+
+    function loaded() {
+        let main = document.getElementById('main');
+        let loader = document.getElementById('load');
+        loader.remove('loader');
+        main.classList.remove("none");
+    }
+</script>
+</html>

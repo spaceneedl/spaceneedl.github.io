@@ -1,0 +1,168 @@
+.title{
+    color: rgb(192,192,192);
+    text-align: center;
+}
+
+a{
+    text-decoration: underline;
+    font-weight: 100;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#vagaBtn{
+    float: right;
+}
+
+#botoes{
+    display: flex;
+    justify-content: space-between;
+}
+.card-centro-processo{
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow: 0px 0px 8px 0px rgba(157, 157, 157, 0.3);
+    border-color: transparent;
+    height: 90%;
+    padding: 30px;
+    background-color: white;
+    margin-bottom: 5%;
+}
+.propriedades-process{
+    display: flex;
+    width: 90%;
+    margin: 3%;
+}
+.property{
+    width: 100%;
+}
+
+.property h3{
+    color: var(--primary-color-gray);
+    padding: 30px 0px 10px 0px !important;
+
+}
+
+.property p{
+    color: var(--primary-color-blue);
+}
+
+#properties{
+    width: 100%;
+    /* text-align: center; */
+}
+
+#properties p{
+    text-align: justify;
+    color: var(--primary-color-blue);
+    margin-bottom: 0;
+}
+
+.file-description{
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+.title h1{
+    font-size: 1.8em;
+    color: var(--primary-color-red);
+    margin-bottom:5%;
+    margin-top: 0%;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 1.2em;
+    color: var(--primary-color-red);
+    margin-bottom:5%;
+    margin-top: 0%;
+}
+
+#properties h3{
+    font-size: 1.1em;
+}
+
+@media (max-width: 450px) { 
+
+    .title h1{
+        font-size: 1.1em !important;
+        padding-bottom: 12%;
+        margin-top: 2%;
+    }
+        
+    #botoes{
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+    .card-centro-processo{
+        margin-top: 20% !important;
+    }
+}
+
+@media (max-width: 575.98px) {         
+    #properties h3{
+        font-size: 1em;
+    }
+    .title h1{
+        font-size: 1em;
+        margin-bottom: 10% !; 
+        margin-top: 0% !important;
+    }
+        
+    }
+    
+@media (max-width: 700.00px) { 
+    .files-process{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 2%;
+        flex-direction: column !important;
+        justify-content: flex-end !important;
+        align-items: flex-start !important;   
+    }
+
+}
+
+@media (max-width: 1200px) { 
+    #properties h3{
+        font-size: 1em;
+    }
+    .title h1{
+        font-size: 1.3em;
+        margin-bottom:10%;
+        margin-top: 0%;
+    }
+
+    .card-centro-processo{
+        margin-top:15%;
+    }
+}
+
+ .files-process{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2%;
+} 
+
+@media (max-width: 1000px) { 
+    .files-process{
+        width: 100% ;
+    } 
+}
