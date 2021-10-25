@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="pt" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <link rel="SHORTCUT ICON" href="favicon.ico" type="image/x-icon" />
+  <meta name="application-name" content="Space Needle Tecnologia" />
+  <meta name="msapplication-TileColor" content="#eeeeee" />
+  <meta name="msapplication-tooltip" content="Space Needle Tecnologia" />
+  <meta name="msvalidate.01" content="054F7361A5559D276C5748CFB4718FDB" />
+  <meta name="google-site-verification" content="QQRpOmkPML9kN2Lc5jiHOLppqFxCDy9uGAyI77wMNIA" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <meta name="application-name" content="Space Needle Tecnologia" />
+  <meta name="description" content="Site sobre a empresa de tecnologia Space Needle Tecnologia">
+  <meta property="og:url" content="https://spaceneedle.com.br" />
+  <meta property="og:site_name" content="Space Needle Tecnologia" />
+  <meta property="og:image" content="https://spaceneedle.com.br/images/ogimage.png" />
+  <meta property="og:title" content="Space Needle Tecnologia" />
+  <meta property="og:description"
+    content="Saiba mais sobre a empresa de tecnologia Space Needle e como contribuimos para um mundo melhor através de nosso trabalho e propósito!" />
+  <meta property="og:locale" content="pt_BR" />
+  <script>
+    if (window.location.host != "" && window.location.host != "localhost" && location.protocol != 'https:') {
+      location.href = location.href.replace("http:", "https:")
+    }
+  </script>
+  <title>Space Needle Tecnologia</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-timeline.css" rel="stylesheet">
+  <link href="css/style-cases.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <header id="menu-responsivo">
+    <div>
+      <span class="menu-responsivo" onclick="openFullMenu()">&#9776;</span>
+    </div>
+  </header>
+
+  <!-- menu vertical inicial -->
+  <aside id="menu" class="navbar flex-column navbar-light">
+    <img src="images/sn_icon.svg" alt="space needle logo" id="aside-img" />
+    <button id="navbar-toggle-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+      aria-controls="sidenav-menu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" onclick="openMenu()"></span>
+    </button>
+    <div id="contatos">
+      <a href="https://instagram.com/oieusouspace?igshid=1oflnm8eumxcz" target="_blank">
+        <img class="menu-icon" src="images/instagram_icon.png" alt="instagram icon" /></a>
+      <br />
+      <a href="https://pt-br.facebook.com/SpaceNeedleTecnologia" target="_blank"><img class="menu-icon"
+          src="images/facebook_icon.png" alt="facebook icon" /></a>
+      <br />
+      <a href="https://br.linkedin.com/company/space-needle-tecnologia" target="_blank"><img class="menu-icon"
+          src="images/linkedin_icon.png" alt="linkedin icon" /></a>
+    </div>
+  </aside>
+
+  <!-- sidebar -->
+  <nav>
+    <div id="sidenav-menu" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+      <img id="sidenav-menu-img" src="./images/sn_logo.svg" alt="Logo da Space Needle">
+      <ul id="navbar-nav" class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li>
+          <a href="#sobre">SOBRE</a>
+        </li>
+        <li>
+          <a href="#cases-de-sucesso">CASES DE SUCESSO</a>
+        </li>
+        <li>
+          <a href="#nossos-servicos">SERVIÇOS</a>
+        </li>
+        <li>
+          <a href="#clientes-e-parceiros">PARCEIROS E
+            CLIENTES</a>
+        </li>
+        <li>
+          <a href="#gptw">GPTW</a>
+        </li>
+      </ul>
+      <br />
+      <div>
+        <div id="contatos-sidebar">
+          <a>
+            <img class="menu-icon" src="images/instagram_icon.png" alt="instagram icon" /></a>
+          <a href="https://pt-br.facebook.com/SpaceNeedleTecnologia" target="_blank"><img class="menu-icon"
+              src="images/facebook_icon.png" alt="facebook icon" /></a>
+          <a href="https://br.linkedin.com/company/space-needle-tecnologia" target="_blank"><img class="menu-icon"
+              src="images/linkedin_icon.png" alt="linkedin icon" /></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="land" class="site-wrapper">
+      <div id="menu-mobile" style="padding: 0; visibility: hidden;">
+        <div class="sidenav-mobile" style="width: 100%;">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeFullMenu()">&times;</a>
+          <img id="sidenav-menu-img-mobile" src="./images/sn_logo.svg" alt="Logo da Space Needle">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li>
+              <a href="#sobre" onclick="closeFullMenu()">SOBRE</a>
+            </li>
+            <li>
+              <a href="#cases-de-sucesso" onclick="closeFullMenu()">CASES DE SUCESSO</a>
+            </li>
+            <li>
+              <a href="#nossos-servicos" onclick="closeFullMenu()">SERVIÇOS</a>
+            </li>
+            <li>
+              <a href="#clientes-e-parceiros" onclick="closeFullMenu()">PARCEIROS E CLIENTES</a>
+            </li>
+            <li>
+              <a href="#gptw" onclick="closeFullMenu()">GPTW</a>
+            </li>
+          </ul>
+          <br />
+          <div>
+            <div id="contatos-sidebar">
+              <a href="https://instagram.com/oieusouspace?igshid=1oflnm8eumxcz" target="_blank">
+                <img class="menu-icon" src="images/instagram_icon.png" alt="instagram icon" /></a>
+              <br />
+              <a href="https://pt-br.facebook.com/SpaceNeedleTecnologia" target="_blank"><img class="menu-icon"
+                  src="images/facebook_icon.png" alt="facebook icon" /></a>
+              <br />
+              <a href="https://br.linkedin.com/company/space-needle-tecnologia" target="_blank"><img class="menu-icon"
+                  src="images/linkedin_icon.png" alt="linkedin icon" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="navbar-toggler-icon menu-responsivo" onclick="openFullMenu()"></span>
+      <div id="title">
+        <div class="divisor" data-aos="fade-up">
+          <h1 id="cultura" data-aos="fade-right">CULTURA</h1>
+        </div>
+        <h1 id="space" class="space-before" data-aos="fade-right" data-aos-delay="300">SPACE NEEDLE</h1>
+      </div>
+      <div id="land-content">
+        <div data-aos="fade-up-right" data-aos-delay="500">
+          <p>Nosso propósito, valores, princípios e boas práticas são o resultado de mais de seis anos de
+            experimentação e melhorias contínuas em todos os aspectos profissionais e pessoais.</p>
+        </div>
+        <div id="btnDiv" data-aos="fade-down" data-aos-delay="1000">
+          <button type="button" class="btn btnCultura"
+            onclick="window.open('https://spaceneedle.com.br/culture','pwin')">
+            <span class="full-text">Conheça a nossa Cultura!</span>
+            <span class="short-text">Conheça!</span>
+            <img class="arrow" src="images/arrow.svg" alt="arrow icon">
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="sobre">
+      <div id="background-rocket">
+        <img id="background-rocket-img" src="images/rocket.png" alt="rocket background">
+      </div>
+      <div class="divisor-pink" data-aos="fade-right">
+        <h2 class="subtitle-white-sobre">SOBRE</h2>
+      </div>
+      <div class="box">
+        <h3 class="title-pink" data-aos="fade-down-right" data-aos-delay="450">A SPACE NEEDLE</h3>
+        <div id="sobre-conteudo">
+          <p data-aos="fade-up" data-aos-delay="500" data-aos-anchor-placement="top-bottom">A Space Needle Tecnologia é
+            uma empresa de engenharia de software especializada em desenhar soluções de problemas aplicando novas
+            tecnologias para a geração de valor e resultados que antes eram impossíveis ou inviáveis.</p>
+          <p data-aos="fade-up" data-aos-delay="800" data-aos-anchor-placement="center-bottom">Criamos aplicativos para
+            todas as plataformas atuais iOS, Android, Windows e Web independentemente de dispositivos, sejam
+            smartphones, notebooks, tablets ou smartwatches etc. Mas vamos além dos aplicativos, criamos soluções
+            completas.</p>
+          <p data-aos="fade-up" data-aos-delay="1100" data-aos-anchor-placement="center-bottom">Ajudamos nossos clientes
+            desde o entendimento do problemas, implementação de toda a infraestrutura e serviços necessários para o
+            funcionamento de cada aplicativo.</p>
+          <p data-aos="fade-up" data-aos-delay="1200" data-aos-anchor-placement="center-bottom">Nossa filosofia
+            principal é pessoas antes de processos. Mais especificamente, temos ótimas pessoas trabalhando juntas com o
+            objetivo comum de ajudar o time a vencer. Com esta abordagem, somos uma organização mais flexível,
+            divertida, estimulante, criativa, colaborativa e bem-sucedida.</p>
+        </div>
+        <div id="sobre-btn">
+          <button id="btn-saiba-mais" type="button" class="btn">Saiba mais!<img class="arrow" src="images/arrow.svg"
+              alt="arrow icon" onclick="window.open('','pwin')"></button>
+        </div>
+      </div>
+
+      <div id="vertical-timeline">
+        <div class="timeline">
+          <div
+            class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes marked"
+            id="node-2013">
+            <div class="col-md-5 order-3 order-md-1 timeline-content" id="timeline-content-2013"
+              style="display: block;">
+              <div class="timeline-content-text" data-aos="fade-down" data-aos-duration="300" data-aos-anchor-placement="top-bottom">
+                <h3>Fundação inspirada na tecnologia vinda de Seattle</h3>
+              </div>
+            </div>
+            <div class="col-md-5 order-3 order-md-1 timeline-content-preview" onclick="changeTimeline(2013)"
+              id="timeline-content-preview2013" style="display: none;"  data-aos="fade-down" data-aos-duration="300" data-aos-anchor-placement="top-bottom">
+              <p>Fundação inspirada na tecnologia vinda de Seattle</p>
+            </div>
+            <div id="marco-2013" class="col-2 col-sm-1 px-md-3 order-2 hi-icon-effect-1a text-md-center marco"
+              onclick="changeTimeline(2013)">
+              <div class="hi-icon ">
+                <img src="images/icon_timeline.png" class="img-fluid" alt="img">
+              </div>
+            </div>
+            <div class="col-md-5 order-1 order-md-3 py-3 timeline-date" onclick="changeTimeline(2013)" data-aos="fade-down-right" data-aos-duration="300" data-aos-anchor-placement="top-bottom">
+              <span><time id="2013" class="ano-2013 ano-selecionado">2013</time></span>
+            </div>
+          </div>
+
+          <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes"
+            id="node-2014">
+            <div class="col-md-5 order-3 order-md-1 timeline-content" id="timeline-content-2014">
+              <div class="timeline-content-text">
+                <h3>Acompanhamento da Copa do Mundo de 2014, criação de soluções para aviação e solução para Cidades
+                  Inteligentes </h3>
+              </div>
+            </div>
+            <div class="col-md-5 order-3 order-md-1 timeline-content-preview" onclick="changeTimeline(2014)"
+              id="timeline-content-preview2014" data-aos="fade-down" data-aos-duration="300" data-aos-anchor-placement="top-bottom" data-aos-delay="400">
+              <p>Acompanhamento da Copa do Mundo de 2014, criação de soluções para aviação e solução para Cidades
+                Inteligentes </p>
+            </div>
+            <div id="marco-2014" class="col-2 col-sm-1 px-md-3 order-2 timeline-white-circle text-md-center marco"
+              onclick="changeTimeline(2014)">
+            </div>
+            <div class="col-md-5 order-1 order-md-3 py-3 timeline-date" onclick="changeTimeline(2014)"  data-aos="fade-down-right" data-aos-duration="300" data-aos-anchor-placement="top-bottom" data-aos-delay="200">
+              <time id="2014">2014</time>
+            </div>
+          </div>
+
+          <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes"
+            id="node-2015">
+            <div class="col-md-5 order-3 order-md-1 timeline-content" id="timeline-content-2015">
+              <div class="timeline-content-text">
+                <h3>Construção do aplicativo de pesquisas para o IBGE, maior venda de Windows Phones do mundo</h3>
+              </div>
+            </div>
+            <div class="col-md-5 order-3 order-md-1 timeline-content-preview" onclick="changeTimeline(2015)"
+              id="timeline-content-preview2015"  data-aos="fade-down" data-aos-duration="300" data-aos-anchor-placement="top-bottom" data-aos-delay="600">
+              <p>Construção do aplicativo de pesquisas para o IBGE, maior venda de Windows Phones do mundo</p>
+            </div>
+            <div id="marco-2015" class="col-2 col-sm-1 px-md-3 order-2 timeline-white-circle text-md-center marco"
+              onclick="changeTimeline(2015)"></div>
+            <div class="col-md-5 order-1 order-md-3 py-3 timeline-date" onclick="changeTimeline(2015)" data-aos="fade-down-right" data-aos-duration="300" data-aos-anchor-placement="top-bottom" data-aos-delay="300">
+              <time id="2015">2015</time>
+            </div>
+          </div>
+
+          <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes"
+            id="node-2016">
+            <div class="col-md-5 order-3 order-md-1 timeline-content" id="timeline-content-2016">
+              <div class="timeline-content-text">
+                <h3>Primeiro projeto co-criado nos Estados Unidos, Certificação GPTW e crescimento exponencial da equipe
+                  (dobrou de tamanho)</h3>
+              </div>
+            </div>
+            <div class="col-md-5 order-3 order-md-1 timeline-content-preview" onclick="changeTimeline(2016)"
+              id="timeline-content-preview2016"  data-aos="fade-down" data-aos-duration="300" data-aos-anchor-placement="top-bottom" data-aos-delay="800">
+              <p>Primeiro projeto co-criado nos Estados Unidos, Certificação GPTW e crescimento exponencial da equipe
+                (dobrou de tamanho)</p>
+            </div>
+            <div id="marco-2016" class="col-2 col-sm-1 px-md-3 order-2 timeline-white-circle text-md-center marco"
+              onclick="changeTimeline(2016)"></div>
+
+            <div id="timeline-date-2016" class="col-md-5 order-1 order-md-3 py-3 timeline-date"
+              onclick="changeTimeline(2016)" data-aos="fade-down-right" data-aos-duration="300" data-aos-anchor-placement="top-bottom" data-aos-delay="400">
+              <time id="2016" class="ano2016">2016 - 2017</time>
+            </div>
+          </div>
+
+          <div class="row no-gutters justify-content-end justify-content-md-around align-items-start timeline-nodes"
+            id="node-2018">
+            <div class="col-md-5 order-3 order-md-1 timeline-content" id="timeline-content-2018">
+              <div class="timeline-content-text">
+                <h3>Início da parceria com o Senai, criação de soluções para Educação e Chatbot de Previdência Privada
+                  para o INSS. GPTW pela segunda vez e crescimento exponencial da equipe (dobrou de tamanho pela segunda
+                  vez)</h3>
+              </div>
+            </div>
+            <div class="col-md-5 order-3 order-md-1 timeline-content-preview" onclick="changeTimeline(2018)"
+              id="timeline-content-preview2018"  data-aos="fade-down" data-aos-duration="300" data-aos-anchor-placement="top-bottom" data-aos-delay="1000">
+              <p>Início da parceria com o Senai, criação de soluções para Educação e Chatbot de Previdência Privada para
+                o INSS. GPTW pela segunda vez e crescimento exponencial da equipe (dobrou de tamanho pela segunda vez)
+              </p>
+            </div>
+            <div id="marco-2018" class="col-2 col-sm-1 px-md-3 order-2 timeline-white-circle text-md-center marco"
+              onclick="changeTimeline(2018)"></div>
+            <div class="col-md-5 order-1 order-md-3 py-3 timeline-date" onclick="changeTimeline(2018)" data-aos="fade-down-right" data-aos-duration="300" data-aos-anchor-placement="top-bottom" data-aos-delay="500">
+              <time id="2018">2018</time>
+            </div>
+          </div>
+
+          <div class="row no-gutters justify-content-end justify-content-md-around align-items-start timeline-nodes"
+            id="node-2019">
+            <div class="col-md-5 order-3 order-md-1 timeline-content" id="timeline-content-2019">
+              <div class="timeline-content-text">
+                <h3>Fundação da holding EON, transformação da cultura organizacional, início do programa de Integridade
+                  e
+                  Compliance e criação de soluções para Saúde e Fintechs</h3>
+              </div>
+            </div>
+            <div class="col-md-5 order-3 order-md-1 timeline-content-preview" onclick="changeTimeline(2019)"
+              id="timeline-content-preview2019"  data-aos="fade-down" data-aos-duration="300" data-aos-anchor-placement="top-bottom" data-aos-delay="1200">
+              <p>Fundação da holding EON, transformação da cultura organizacional, início do programa de Integridade e
+                Compliance e criação de soluções para Saúde e Fintechs</p>
+            </div>
+            <div id="marco-2019" class="col-2 col-sm-1 px-md-3 order-2 timeline-white-circle text-md-center marco"
+              onclick="changeTimeline(2019)"></div>
+            <div class="col-md-5 order-1 order-md-3 py-3 timeline-date" onclick="changeTimeline(2019)" data-aos="fade-down-right" data-aos-duration="300" data-aos-anchor-placement="top-bottom" data-aos-delay="600">
+              <time id="2019">2019</time>
+            </div>
+          </div>
+
+          <div
+            class="row no-gutters justify-content-end justify-content-md-around align-items-start timeline-nodes node-2020"
+            id="node-2020">
+            <div class="col-md-5 order-3 order-md-1 timeline-content" id="timeline-content-2020">
+              <div class="timeline-content-text">
+                <h3>Lançamento dos Rocket Apps, das plataformas Universum de tecnologia e Galaxie de serviços para
+                  empresas, parceria com a HCL e mais!</h3>
+              </div>
+            </div>
+            <div class="col-md-5 order-3 order-md-1 timeline-content-preview" onclick="changeTimeline(2020)"
+              id="timeline-content-preview2020" data-aos="fade-down" data-aos-duration="300" data-aos-anchor-placement="top-bottom" data-aos-delay="1400">
+              <p>Lançamento dos Rocket Apps, das plataformas Universum de tecnologia e Galaxie de serviços para
+                empresas, parceria com a HCL e mais!</p>
+            </div>
+            <div id="marco-2020" class="col-2 col-sm-1 px-md-3 order-2 timeline-white-circle text-md-center marco"
+              onclick="changeTimeline(2020)"></div>
+            <div class="col-md-5 order-1 order-md-3 py-3 timeline-date" onclick="changeTimeline(2020)" data-aos="fade-down-right" data-aos-duration="300" data-aos-anchor-placement="top-bottom" data-aos-delay="700">
+              <time id="2020">2020</time>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cases-de-sucesso">
+      <div class="divisor-pink" data-aos="fade-right">
+        <h2 class="subtitle-gray">CONFIRA NOSSOS PRINCIPAIS</h2>
+      </div>
+      <h3 id="title-cases" class="title-pink" data-aos="fade-down-right" data-aos-delay="450">CASES DE<br /> SUCESSO
+      </h3>
+      <div class="cases-container">
+        <div class="main_1 case-container">
+          <img src="images/case/case_ibge.jpg" style="min-width: 100%;
+          max-height: 386.69px;
+          min-height: 100%;
+          object-fit: cover;
+          width: 100%;" alt="https://br.freepik.com/fotos-vetores-gratis/pessoas">
+          <div class="middle" style="width: 70%;">
+            <div class="case-text">
+              <h6>
+                IBGE
+              </h6>
+              <p>Projeto do aplicativo de pesquisas para Windows e Windows Phone para o IBGE o maior cliente de Windows
+                Phone do mundo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="main_2 case-container">
+          <img src="images/case/case_edp.jpg" alt="funcionária trabalhando">
+          <div class="middle">
+            <div class="case-text">
+              <h6>EDP Brasil</h6>
+              <p>Criação da plataforma de execução de serviços em campo que atende uma área de 10.000.000 de pessoas nos
+                estados de São Paulo e Espírito Santo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="main_4 case-container">
+          <img src="images/case/case_azul.jpg" alt="aviao azul">
+          <div class="middle" style="width: 70%;">
+            <div class="case-text">
+              <h6>
+                Azul
+              </h6>
+              <p>Aplicativo de consultas de voo e gerador de crachás de todos os funcionários da Azul espalhados pelo
+                país.</p>
+            </div>
+          </div>
+        </div>
+        <div class="main_5 case-container">
+          <img src="images/case/case_copa.jpg" alt="jogador de futebol">
+          <div class="overlay">
+            <div class="middle">
+              <div id="caseCopa" class="case-text">
+                <h6>Copa do Mundo 2014</h6>
+                <p>Plataforma de monitoramento em tempo real nas redes sociais de todas as menções de todos os jogadores
+                  de todas as seleções do mundo para a Agência África e Itaú.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- mobile-->
+      <div id="cases-mobile">
+        <div class="responsive" data-aos="zoom-out-right" data-aos-delay="100">
+          <div class="gallery">
+            <img src="images/case/case_ibge.jpg" alt="family">
+            <div class="middle">
+              <div class="case-text">
+                <h6>
+                  IBGE
+                </h6>
+                <p>Projeto do aplicativo de pesquisas para Windows e Windows Phone para o IBGE o maior cliente de
+                  Windows Phone do mundo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="responsive" data-aos="zoom-out-right" data-aos-delay="200">
+          <div class="gallery">
+            <img src="images/case/case_azul_mobile.jpg" alt="airplane">
+            <div class="middle">
+              <div class="case-text">
+                <h6>
+                  Azul
+                </h6>
+                <p>Aplicativo de consultas de voo e gerador de crachás de todos os funcionários da Azul espalhados pelo
+                  país.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="responsive" data-aos="zoom-out-right" data-aos-delay="300">
+          <div class="gallery">
+            <img src="images/case/case_copa.jpg" alt="soccer player">
+            <div class="middle">
+              <div class="case-text">
+                <h6>Copa do Mundo 2014</h6>
+                <p>Plataforma de monitoramento em tempo real nas redes sociais das menções de todos os jogadores de
+                  todas as seleções do mundo para a Agência África e Itaú.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="responsive" data-aos="zoom-out-right" data-aos-delay="400">
+          <div class="gallery">
+            <img src="images/case/case_edp_mobile.jpg" alt="worker">
+            <div class="middle">
+              <div class="case-text">
+                <h6>EDP Brasil</h6>
+                <p>Criação da plataforma de execução de serviços em campo que atende uma área de 10.000.000 de pessoas
+                  nos estados de São Paulo e Espírito Santo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section id="nossos-servicos">
+        <h4 id="servicos-title">SERVIÇOS</h4>
+        <div id="servicos" class="cards">
+          <div class="servico">
+            <div class="rounded-circle servico-item blue-background">
+              <div>
+                <img id="transformacao_digital" src="images/services/transformacao_digital.svg"
+                  alt="ícone transformação digital">
+              </div>
+            </div>
+            <h5 class="azul">Transformação Digital</h5>
+            <div class="linha-vertical"></div>
+            <ul class="azul">
+              <li>Treinamentos</li>
+              <li>Criatividade e disrupção</li>
+              <li>Metodologias Ágeis de trabalho</li>
+              <li>Novas Tecnologias</li>
+            </ul>
+          </div>
+
+          <div class="servico">
+            <div class="rounded-circle servico-item pink-background">
+              <div>
+                <img id="design" src="images/services/design.svg" alt="ícone design">
+              </div>
+            </div>
+            <h5 class="pink">Design</h5>
+            <div class="linha-vertical"></div>
+            <ul class="pink">
+              <li>User Interface</li>
+              <li>User Experience</li>
+            </ul>
+          </div>
+
+          <div class="servico">
+            <div class="rounded-circle servico-item blue-background">
+              <div>
+                <img id="devops" src="images/services/devops.svg" alt="ícone devOps">
+              </div>
+            </div>
+            <h5 class="azul">DevOps</h5>
+            <div class="linha-vertical"></div>
+            <ul class="azul">
+              <li>Cloud Development</li>
+              <li>Mobile Development iOS e Android</li>
+              <li>Web Standards</li>
+              <li>Messaging Platforms</li>
+              <li>Test Automation</li>
+            </ul>
+          </div>
+
+          <div class="servico">
+            <div class="rounded-circle servico-item pink-background" style="display: flex;">
+              <div style="margin: auto;">
+                <img id="ai" src="images/services/ai.svg" alt="ícone ai">
+              </div>
+            </div>
+            <h5 class="pink">AI</h5>
+            <div class="linha-vertical"></div>
+            <ul class="pink">
+              <li>Chatbots</li>
+              <li>Machine Learning</li>
+              <li>Biometric Applications</li>
+            </ul>
+          </div>
+
+          <div class="servico">
+            <div class="rounded-circle servico-item blue-background">
+              <div>
+                <img id="application-security" src="images/services/app_security.svg" alt="ícone app security">
+              </div>
+            </div>
+            <h5 class="azul">Application Security</h5>
+            <div class="linha-vertical"></div>
+            <ul class="azul">
+              <li>Static Code Analysis</li>
+              <li>Live Code Analysis</li>
+              <li>Interactive Code Analysis</li>
+            </ul>
+          </div>
+
+          <div class="servico">
+            <div class="rounded-circle servico-item pink-background">
+              <div>
+                <img id="live-ops" class="img-pink" src="images/services/liveops.svg" alt="ícone liveops">
+              </div>
+            </div>
+            <h5 class="pink">LiveOps</h5>
+            <div class="linha-vertical"></div>
+            <ul class="pink">
+              <li>Continuous Delivery </li>
+              <li>Live Cloud Instrumentation</li>
+              <li>Live Application Monitoring</li>
+            </ul>
+          </div>
+
+          <div class="servico">
+            <div class="rounded-circle servico-item blue-background">
+              <div>
+                <img id="treinamentos" src="images/services/treinamentos.svg" alt="ícone treinamentos">
+              </div>
+            </div>
+            <h5 class="azul">Treinamentos</h5>
+            <div class="linha-vertical"></div>
+            <ul class="azul">
+              <li>Metodologias Ágeis</li>
+              <li>Desenvolvimento em Cloud</li>
+              <li>Desenvolvimento Mobile</li>
+              <li>Desenvolvimento Web</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <div id="clientes-e-parceiros">
+      <section id="parceiros">
+        <div class="divisor-pink" data-aos="fade-right">
+          <h2 class="subtitle-gray" data-aos="fade-down-right" data-aos-delay="450">PARCEIROS</h2>
+        </div>
+        <div class="parceiros-lista" data-aos="fade-right" data-aos-delay="550">
+          <div class="row">
+            <div class="col-sm empresa">
+              <img src="images/clients/microsoft-gray.png" style="width: 150px; max-width: 350px;" alt="microsoft icon">
+            </div>
+
+            <div class="col-sm empresa">
+              <img src="images/partners/intel.png" style="width: 80px; max-width: 200px;" alt="intel icon">
+            </div>
+            <div class="col-sm empresa">
+              <img src="images/partners/aws.png" style="width: 70px; ;margin-top: 10px; max-width: 175px;"
+                alt="aws icon">
+            </div>
+            <div class="col-sm empresa">
+              <img src="images/partners/hcl.png"
+                style="width: 130px; max-width: 130px; min-height: 34px; margin-top: 5px; max-height: 34px;"
+                alt="hcl icon">
+            </div>
+            <div class="col-sm empresa">
+              <img src="images/partners/clara_cloud.png" style="width: 100px;margin-top: -15px; max-width: 250px"
+                alt="clara cloud icon">
+            </div>
+            <div class="col-sm empresa">
+              <img src="images/partners/senai.png" style="width: 155px; margin-top: 5px; max-width: 387px"
+                alt="senai icon">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="clientes">
+        <div class="divisor-pink" data-aos="fade-right">
+          <h2 class="subtitle-gray" data-aos="fade-down-right" data-aos-delay="450">CLIENTES</h2>
+        </div>
+        <br />
+        <div id="clientes-box" data-aos="fade-right" data-aos-delay="550">
+          <div id="clientes-mobile-imgs">
+            <img src="images/clients/clientes.jpg" style="max-width: 100%;" alt="lista de clientes">
+          </div>
+
+          <!-- telas maiores -->
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="">
+                  <div class="row">
+                    <div class="col-sm">
+                      <img src="images/clients/microsoft-gray.png"
+                        style="width: 150px;margin-top: 15px; max-width: 375px;" alt="microsoft icon">
+                    </div>
+                    <div class="col-sm">
+                      <img src="images/clients/itau.png" style="width: 60px; margin-top: 13px; max-width: 150px;"
+                        alt="itau icon">
+                    </div>
+                    <div class="col-sm">
+                      <img src="images/clients/infraero.png" style="width: 70px; margin-top: 20px; max-width: 175px"
+                        alt="infraero icon">
+                    </div>
+                    <div class="col-sm">
+                      <img style="width: 65px; margin-top: -4px; max-width: 162px;" src="images/clients/africa.png"
+                        alt="africa icon">
+                    </div>
+                    <div class="col-sm">
+                      <img src="images/clients/loterias_caixa.jpg"
+                        style="width: 100px; margin-top: 20px; max-width: 250px" alt="loterias caixa icon">
+                    </div>
+                    <div class="col-sm">
+                      <img src="images/clients/azul.png" style="width: 90px; margin-top: 30px; max-width: 225px;"
+                        alt="azul icon">
+                    </div>
+                    <div class="col-sm">
+                      <img src="images/clients/ibge.png" style="width: 80px; margin-top: 15px; max-width: 200px;"
+                        alt="ibge icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div>
+                  <div class="row" style="margin-top: 10px;">
+                    <div class="col-sm">
+                      <img src="images/clients/DM9DDB.png" style="width: 120px;margin-top: 5px; max-width: 300px;"
+                        alt="dm9ddb icon">
+                    </div>
+                    <div class="col-sm">
+                      <img src="images/clients/grey.png" style="padding-top: 15px; width: 90px; max-width: 225px"
+                        alt="grey icon">
+                    </div>
+                    <div class="col-sm">
+                      <img src="images/clients/cinemark.png" style="width: 170px;margin-top: 25px; max-width: 420px;"
+                        alt="cinemark icon">
+                    </div>
+                    <div class="col-sm">
+                      <img style="width: 100px; max-width: 250px;" src="images/clients/banco_central.png"
+                        alt="banco central icon">
+                    </div>
+                    <div class="col-sm">
+                      <img src="images/clients/rede_tv.png" style="width: 100px; max-width: 250px;" alt="rede_tv icon">
+                    </div>
+                    <div class="col-sm">
+                      <img style="width: 70px; max-width: 175px;" src="images/clients/edp.png" alt="edp icon">
+                    </div>
+                    <div class="col-sm">
+                      <img src="images/clients/maplink.png" style="width: 80px; max-width: 195px;" alt="maplink icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="">
+                  <div class="row">
+                    <div class="col-sm">
+                      <img style="width: 90px;    margin-top: 10px;" src="images/clients/1746rio.png"
+                        alt="prefeitura rio icon">
+                    </div>
+                    <div class="col-sm">
+                      <img src="images/clients/icarros.png" style="width: 110px; margin-top: 15px; max-width: 265px;"
+                        alt="icarros icon">
+                    </div>
+                    <div class="col-sm">
+                      <img src="images/clients/movile.png" style="width: 100px;margin-top: 8px; max-width: 250px;"
+                        alt="movile icon">
+                    </div>
+                    <div class="col-sm">
+                      <img src="images/clients/poliedro.png" style="width: 65px; max-width: 162px;" alt="poliedro icon">
+                    </div>
+                    <div class="col-sm">
+                      <img src="images/clients/celpa.png" style="width: 90px; max-width: 225px;" alt="celpa icon">
+                    </div>
+                    <div class="col-sm">
+                      <img src="images/clients/mavie.png" style="width: 80px;max-width: 200px;" alt="mavie icon">
+                    </div>
+                    <div class="col-sm">
+                      <img src="images/clients/continue.jpg" style="width: 80px;max-width: 200px;margin-top: -5px;"
+                        alt="continue icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="">
+                  <div class="row" style="margin-top: 20px;">
+                    <div class="col-sm2" style="text-align: left;">
+                      <img src="images/clients/saqcash.png" style="width: 150px; max-width: 375px;" alt="saqcash icon">
+                    </div>
+                    <div class="col-sm2" style="text-align: left;">
+                      <img src="images/clients/orbe.png" style="width: 120px; margin-top: 3px; max-width: 200px;"
+                        alt="orbe icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="gptw">
+      <div class="divisor-white" data-aos="fade-right">
+        <h2 class="subtitle-white" data-aos="fade-down-right" data-aos-delay="450">SOMOS GPTW</h2>
+      </div>
+
+      <div id="gptw-conteudo" data-aos="fade-right" data-aos-delay="550">
+        <div id="textos">
+          <p>Somos certificados como uma das melhores empresas para se trabalhar desde 2018 pois todos na Space Needle
+            buscam criar oportunidades de se desenvolver, se cuidar e fazer isso pelos colegas.</p>
+          <p>Encorajamos estas oportunidades oferecendo recursos para projetos que potencializem que todos realizem seu
+            potencial.</p>
+          <p>Estimulamos a liderança a abraçar estes projetos e a encontrar os mais sustentáveis e com melhores
+            resultados e fazer deles parte da nossa cultura.</p>
+          <button id="btn-culture-gptw" type="button" class="btn btnCultura"
+            onclick="window.open('https://www.spaceneedle.com.br/culture','pwin')">
+            <span>Conheça nossa Cultura!</span>
+            <img src="images/arrow.svg" class="arrow" alt="arrow icon">
+          </button>
+        </div>
+        <div id="gptw-icon">
+          <img src="images/gptw.png" alt="gptw icon" />
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="divisor-red" data-aos="fade-right">
+        <h2 class="subtitle-red" data-aos="fade-down-right" data-aos-delay="450">SPACE NEEDLE TECNOLOGIA LTDA</h2>
+      </div>
+      <div id="content">
+        <div id="footer-content-text">
+          <div style="display:flex;margin-top: 20px;margin-bottom: 0;">
+            <img id="whatsapp-icon" src="images/whatsapp.svg" alt="whatsapp icon">
+            <a href="https://wa.me/5511934285367" target="_blank" class="flex" style="text-decoration: none;">
+              <p style=" margin-left: 0;" class="underline">+55 <b>11 93428-5367</b></p>
+            </a>
+          </div>
+          <div style="display:flex;">
+            <img id="location-icon" src="images/location.svg" alt="location icon">
+            <p style="margin-bottom: 0;" onclick="mapsSelector()" class="underline">
+            Avenida Copacabana, 112 – Conjunto 06 – Dezoito do Forte Empresarial/Alphaville - Barueri - SP - 06472-001</p>
+          </div>
+          <div class="divlinkalign">
+            <span style="color: #d10a11; font-weight: bold">///</span>
+            <a href="https://what3words.com/exact.shorter.works" target="_blank"
+              style="color: #293086; font-weight: bold">exact.shorter.works</a>
+          </div>
+        </div>
+        <div id="logo-footer">
+          <img src="images/sn_logo.svg" alt="space-needle-icon" />
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+  <script>
+    function mapsSelector() {
+      if /* if we're on iOS, open in Apple Maps */ ((navigator.platform.indexOf("iPhone") != -1) ||
+        (navigator.platform.indexOf("iPad") != -1) ||
+        (navigator.platform.indexOf("iPod") != -1))
+        window.open("maps://maps.google.com/maps?daddr=-23.4974,-46.8487&amp;ll=");
+      else /* else use Google */
+        window.open("https://maps.google.com/maps?daddr=-23.4974,-46.8487&amp;ll=");
+    }
+  </script>
+
+  <script>
+
+    function openMenu() {
+      let menu = document.getElementById("sidenav-menu");
+      menu.classList.remove("sidenav-menu-translate-close");
+      menu.classList.add("sidenav-menu-translate-open");
+      menu.style.visibility = "visible";
+      menu.style.left = "0px";
+      let menuHamburguer = document.getElementById("menu");
+      menuHamburguer.classList.remove('menu-hamburguer-opacity-off')
+      menuHamburguer.classList.add('menu-hamburguer-opacity-on');
+    }
+
+    function openFullMenu() {
+      document.getElementById("menu-mobile").style.visibility = "visible";
+      let menu = document.getElementById("menu-mobile");
+      menu.classList.remove("menu-mobile-none");
+    }
+
+    function closeMenu() {
+      let menuHamburguer = document.getElementById("menu");
+      menuHamburguer.classList.add('menu-hamburguer-opacity-off');
+      menuHamburguer.classList.remove('menu-hamburguer-opacity-on')
+
+      let menu = document.getElementById("sidenav-menu");
+      menu.classList.remove("sidenav-menu-translate-open")
+      menu.classList.add("sidenav-menu-translate-close")
+    }
+
+    function closeFullMenu() {
+      let menu = document.getElementById("menu-mobile");
+      menu.classList.add("menu-mobile-none");
+    }
+
+    function changeTimeline(ano) {
+      $('.timeline-content-preview').show();
+      $('#timeline-content-preview' + ano).hide();
+
+      $('.timeline-content').hide();
+      document.getElementById("timeline-content-" + ano).style.display = "block";
+
+      $('.timeline-nodes').removeClass('marked');
+
+      $('#node-' + ano).addClass('marked');
+
+      $('.marco > div').remove();
+
+      $('.marco').removeClass('timeline-white-circle');
+      $('.marco').removeClass('hi-icon');
+
+      $('.marco').removeClass('hi-icon-effect-1a');
+
+      $('.marco').addClass('timeline-white-circle');
+
+      $('#marco-' + ano).removeClass('timeline-white-circle');
+
+      $('#marco-' + ano).addClass('hi-icon-effect-1a');
+
+      // remove o resto da linha da timeline
+      if (ano == 2020) {
+        $('#marco-' + ano).addClass('marked-2020');
+      } else {
+        $('#marco-2020').removeClass('marked-2020');
+      }
+
+      $('#marco-' + ano).append("<div class=\"hi-icon\"><img src=\"images/icon_timeline.png\" class=\"img-fluid\" alt=\"img\"></div>");
+
+      $('time').removeClass('ano-selecionado');
+      $('time').removeClass('ano-selecionado2');
+      $('#timeline-date-2016').removeClass('padding13');
+
+      if (ano != 2016) {
+        $('#' + ano).addClass('ano-selecionado');
+
+        document.getElementById('2016').textContent === "2016 - 2017" ? null : document.getElementById('2016')
+          .textContent = "2016 - 2017";
+
+      } else {
+        $('#' + ano).addClass('ano-selecionado2');
+        $('#' + ano).addClass('ano-selecionado2');
+        // $('#timeline-date-2016').addClass('padding13');
+
+        if (!window.matchMedia("(max-width: 567px)").matches) {
+          document.getElementById(ano).textContent = "2016 2017";
+        }
+      }
+    }
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $(document).on("scroll", onScroll);
+
+      //smoothscroll
+      $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+
+        $(document).off("scroll");
+
+
+        $('a').each(function () {
+          $(this).removeClass('active');
+        })
+
+        $(this).addClass('active');
+        var target = this.hash,
+          menu = target;
+        $target = $(target);
+
+        $('html, body').animate({
+          'scrollTop': $target.offset().top
+
+        }, 'fast', function () {
+          window.location.hash = target;
+          $(document).on("scroll", onScroll);
+        });
+      });
+    });
+
+    function onScroll(event) {
+      setTimeout(function () {
+        var scrollPos = $(document).scrollTop();
+        $('#navbar-nav a').each(function () {
+          var currLink = $(this);
+          var refElement = $(currLink.attr("href"));
+
+          if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('#navbar-nav li a').removeClass("active");
+            currLink.addClass("active");
+          } else {
+            currLink.removeClass("active");
+          }
+        });
+      }, 500);
+    }
+
+    // when click outside the menu its closes
+    $(document).ready(function () {
+          $("body > *").not("body > aside").not("body > nav").click(function () {
+          closeMenu();
+      });
+
+    });
+  </script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    // $(window).on('load', function () {
+    //   removeLoader();
+    // });
+    // function removeLoader() {
+    //   $('header').css('display', 'block');
+    //   $('aside').css('visibility', 'visible');
+    //   $('#sidenav-menu').css('visibility', 'visible');
+    //   $('main').css('display', 'block');
+    //   $("#loading").remove();
+    // }
+  </script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-54925625-1', 'auto'); 
+    ga('send', 'pageview');
+  </script>
+</body>
+
+</html>
