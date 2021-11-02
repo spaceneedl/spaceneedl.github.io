@@ -1,3 +1,5 @@
+# SPACE FLOW
+
 The SPACE Flow is a general purpose release first branch strategy.
 
 It works for any version controlled software of any kind for any platform.
@@ -42,8 +44,6 @@ https://guides.github.com/introduction/flow/
 <center>
 
  ![SPACE Flow](https://www.spaceneedl.com/flow/space-flow.png)
- 
-![image.png](/flow/space-flow.png =300x)
 
 </center>
 
