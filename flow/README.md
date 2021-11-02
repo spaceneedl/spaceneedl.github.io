@@ -41,6 +41,8 @@ https://guides.github.com/introduction/flow/
 
 <center>
 
+ ![SPACE Flow](https://www.spaceneedl.com/flow/space-flow.png)
+ 
 ![image.png](/flow/space-flow.png =300x)
 
 </center>
